@@ -36,6 +36,13 @@
     </div>
   </body>
   <tail>
-	<a href="{{ site.url }}/about">About</a>
+  <nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
+<!--	<a href="{{ site.url }}/about">About</a> -->
   </tail>
 </html>
