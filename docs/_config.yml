@@ -25,7 +25,7 @@ github_username:  T-Charrier
 
 # Build settings
 markdown: kramdown
-theme: hacker
+theme: Hacker
 #plugins:
 #  - jekyll-feed
 
